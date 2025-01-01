@@ -1,6 +1,6 @@
 The steps for the banker's algorithm are:
-Initialize vectors: Initialize the vectors Work and Finish. Work contains the resources of each type, and Finish indicates if a process has finished execution. Set Work to Available and Finish[i] to false. 
-Find a process: Find a process where Finish[i] = false and Need[i] <= Work. If such a process exists, continue to step 3. 
-Add the process to allocation: Add the process that satisfies Need[i] <= Work to Allocation[i]. 
-Repeat: Repeat steps 2 and 3 until all processes have completed execution. 
-Check for a safe state: If Finish[i] = true for all i, then the system is safe. 
+1.Initialize vectors: Initialize the vectors Work and Finish. Work contains the resources of each type, and Finish indicates if a process has finished execution. Set Work to Available and Finish[i] to false. 
+2.Find a process: Find a process where Finish[i] = false and Need[i] <= Work. If such a process exists, continue to step 3. 
+3.Add the process to allocation: Add the process that satisfies Need[i] <= Work to Allocation[i]. 
+4.Repeat: Repeat steps 2 and 3 until all processes have completed execution. 
+5.Check for a safe state: If Finish[i] = true for all i, then the system is safe. 
