@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banker's Algorithm</h1>
+        <hr><br>
+        <form id="bankersForm">
+            <label for="numProcesses"><b>Number of Processes:</b></label>
+            <input type="number" id="numProcesses" name="numProcesses" required>
+            <label for="numResources"><b>Number of Resource Types:</b></label>
+            <input type="number" id="numResources" name="numResources" required>
+            <hr>
+            <button type="button" onclick="generateResourceInstances()"><b>Next</b></button>
+            <button type="button" onclick="generateTables()"><b>Generate Tables</b></button>
+            <div id="resourceInstancesForm"></div>
+            <div id="resourceForm"></div>
+            <button type="submit"><b>Calculate</b></button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
